@@ -1,5 +1,9 @@
 # Mission 1: Web Responsive Challenge
 
+<img width="1871" height="1017" alt="image" src="https://github.com/user-attachments/assets/3b9d7f0a-0216-4794-b90e-4d604818cdc4" />
+
+---
+
 - Nama: Ikhsan Satriadi
 - NIM: 241511080
 - Prodi: D3 - Teknik Informatika
