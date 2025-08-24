@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'Junicode Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Junicode Regular'), url('assets/fonts/Junicode.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Junicode Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Junicode Italic'), url('Junicode-assets/fonts/Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Junicode Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Junicode Bold'), url('Junicode-assets/fonts/Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Junicode Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Junicode Bold Italic'), url('Junicode-assets/fonts/BoldItalic.woff') format('woff');
+}
+
+/* color palette
+bg: rgb(31, 31, 31);
+bg2: rgba(255, 255, 255, 0.1);
+text: rgb(209, 207, 192);
+accent: rgb(247, 111, 83);
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(31, 31, 31);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(209, 207, 192, 0.2);
+  margin: 32px 0;
+}
+
+h2,
+h3,
+h4,
+p,
+span,
+a,
+li,
+label,
+img {
+  font-family: 'Bricolage Grotesque';
+  color: rgb(209, 207, 192);
+}
+
+a {
+  color: rgb(247, 111, 83);
+}
+
+.text-accent {
+  color: rgb(247, 111, 83);
+}
+
+.bg-accent {
+  background-color: rgb(247, 111, 83);
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  row-gap: 12px;
+  column-gap: 8px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(31, 31, 31, 0.95);
+  padding: 16px 24px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.nav-links {
+  display: none;
+}
+
+.hero-container {
+  text-align: center;
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.greet,
+.greet>.text-accent {
+  font-family: 'Junicode Regular';
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.greet>.text-accent {
+  font-style: italic;
+
+}
+
+h1 {
+  font-family: 'Junicode Regular';
+  color: rgb(209, 207, 192);
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.button {
+  font-family: 'Bricolage Grotesque';
+  color: rgb(31, 31, 31);
+  background-color: rgb(209, 207, 192);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 0px;
+  vertical-align: middle;
+}
+
+.button-dimmed {
+  color: rgb(209, 207, 192);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+section,
+footer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.data-diri {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+
+.info-diri {
+  flex: 1;
+  text-align: left;
+}
+
+.info-diri>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.foto-diri {
+  flex: 1;
+  position: relative;
+}
+
+.foto-diri>img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  margin: auto;
+  filter: sepia(0.9) contrast(0.5) saturate(1.5);
+}
+
+.overlay-foto-diri {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(to bottom, rgba(31, 31, 31, 0), rgba(31, 31, 31, 1) 95%);
+}
+
+.projects {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.project-item {
+  flex: 1;
+}
+
+.project-image {
+  width: 100%;
+  height: 320px;
+  border-radius: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+footer {
+  color: rgb(31, 31, 31);
+  background-color: rgb(209, 207, 192);
+  margin-top: 56px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+footer p,
+footer a {
+  margin: 8px;
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: rgb(31, 31, 31);
+}
+
+.footer-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  nav {
+    padding: 16px 24px;
+  }
+
+  ul.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: rgb(209, 207, 192);
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+    color: rgb(247, 111, 83);
+  }
+
+  .greet,
+  .greet>.text-accent {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  section,
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .data-diri {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .foto-diri>img {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 48px;
+  }
+
+  .projects {
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .project-image {
+    height: 280px;
+  }
+
+  .footer-items {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 128px;
+    line-height: 128px;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  nav {
+    padding: 24px 64px;
+  }
+
+  ul.nav-links {
+    gap: 48px;
+  }
+
+  .greet,
+  .greet>.text-accent {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+
+  section,
+  footer {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+
+  .foto-diri>img {
+    max-width: 300px;
+    margin-right: 56px;
+  }
+
+  .projects {
+    gap: 24px;
+  }
+
+  .project-image {
+    height: 300px;
+  }
+}
