@@ -16,6 +16,7 @@ Proyek portofolio ini adalah sebuah website sederhana yang dibuat menggunakan HT
 Proyek ini dibangun menggunakan **HTML** dan **CSS** murni. Tidak ada framework CSS seperti Bootstrap atau Tailwind CSS yang digunakan, semua styling dilakukan secara manual untuk memastikan pemahaman mendalam tentang konsep dasar CSS seperti Flexbox dan Grid. Teknologi lainnya yang digunakan meliputi:
 
 - **Google Fonts.**
+- **Font Awesome Icons.**
 
 ---
 
@@ -24,3 +25,7 @@ Proyek ini dibangun menggunakan **HTML** dan **CSS** murni. Tidak ada framework 
 Proyek ini telah berhasil di-deploy dan dapat diakses melalui link berikut:
 
 - **<https://ikhsan3adi.is-a.dev/cv>**
+
+---
+
+Inspired by: <https://zen-browser.app/>
